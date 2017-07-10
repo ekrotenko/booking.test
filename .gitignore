@@ -1,0 +1,10 @@
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules/
+npm-debug.log
+
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+
+**/.DS_Store
