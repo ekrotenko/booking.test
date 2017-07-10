@@ -16,7 +16,7 @@ describe('Verify search by city', () => {
         });
     });
 
-    it(`should contain '${searchCityData.searchData.city}' in location of hotel item`, () => {
+    it(`should contain '${searchCityData.searchData.city}' in location of each hotel item`, () => {
         pages.searchResultsPage.hotelsList.each((hotelItem, index) => {
             expect(pages.searchResultsPage.getLocationOfItem(hotelItem))
                 .toContain(searchCityData.searchData.city,
