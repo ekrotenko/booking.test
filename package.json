@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "bottlejs": "^1.6.0",
+    "faker": "^4.1.0",
     "jasmine-data-provider": "^2.2.0",
     "jasmine-spec-reporter": "^2.7.0",
     "lodash": "^4.0.0",
