@@ -9,7 +9,7 @@
 
 ## Installation
 - clone `git clone https://github.com/ekrotenko/booking.test.git`
-- `cd booking.test.task`
+- `cd booking.test`
 - `npm install`
 
 ## Run tests
