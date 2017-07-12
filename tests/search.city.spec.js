@@ -11,10 +11,9 @@ describe('Verify search by city', () => {
 
     it(`should return at least ${searchCityData.minQuantity} items`, () => {
         pages.homePage.searchForm.search(searchCityData.searchData);
-        pages.searchResultsPage.hotelsList.count().then(count => {
-            expect(count >= searchCityData.minQuantity)
-                .toBeTruthy(`Result set contains ${count} items satisfied search data`);
-        });
+        expect(pages.searchResultsPage.hotelsList.count())
+            .toBeGreaterThan(searchCityData.minQuantity
+                ,`Result set contains less than ${searchCityData.minQuantity} items satisfied search data`);
     });
 
     it(`should contain '${searchCityData.searchData.city}' in location of each hotel item`, () => {
